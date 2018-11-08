@@ -3,7 +3,8 @@
 int main() {
 //    ShowNameAge();
 //    ShowCandyBar();
-    TestSwap();
+//    TestSwap();
+    StrtRef();
     cin.clear();
     cin.sync();
     cin.get();

@@ -98,3 +98,14 @@ void StrtRef() {
     Display(dup);
 
 }
+
+string version1(const string &s1, const string &s2) {
+    string temp;
+    temp = s2 + s1 + s2;
+    return temp;
+}
+
+const string &version2(string &s1, const string &s2) {
+    s1 = s2 + s1 + s2;
+    return s1;
+}
