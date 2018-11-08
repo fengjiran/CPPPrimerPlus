@@ -88,6 +88,13 @@ void StrtRef() {
     Display(team);
 
     dup = Accumulate(team, five);
-
+    cout << "Displaying team:\n";
+    Display(team);
+    cout << "Displaying dup after assignment:\n";
+    Display(dup);
+    SetPc(four);
+    Accumulate(dup, five) = four;
+    cout << "Displaying dup after ill-advised assinment:\n";
+    Display(dup);
 
 }
