@@ -22,6 +22,13 @@ void ShowNameAge();
 void ShowCandyBar();
 
 // The chapter8
+struct free_throws {
+    string name;
+    int made;
+    int attempts;
+    float percent;
+};
+
 void TestSwap();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H
