@@ -54,7 +54,7 @@ void Display(const free_throws &ft) {
     cout << "Percent: " << ft.percent << endl;
 }
 
-void Set_pc(free_throws &ft) {
+void SetPc(free_throws &ft) {
     if (ft.attempts != 0)
         ft.percent = 100.0f * float(ft.made) / float(ft.attempts);
     else
@@ -64,7 +64,7 @@ void Set_pc(free_throws &ft) {
 free_throws &Accumulate(free_throws &target, const free_throws &source) {
     target.attempts += source.attempts;
     target.made += source.made;
-    Set_pc(target);
+    SetPc(target);
     return target;
 }
 
@@ -78,7 +78,7 @@ void StrtRef() {
 
     free_throws dup;  // no initialization
 
-    Set_pc(one);
+    SetPc(one);
     Display(one);
     Accumulate(team, one);
     Display(team);

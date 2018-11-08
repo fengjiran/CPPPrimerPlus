@@ -30,5 +30,6 @@ struct free_throws {
 };
 
 void TestSwap();
+void StrtRef();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H
