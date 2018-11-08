@@ -1,11 +1,9 @@
-#include <iostream>
 #include "header/exercise.h"
-
-using namespace std;
 
 int main() {
 //    ShowNameAge();
-    ShowCandyBar();
+//    ShowCandyBar();
+    TestSwap();
     cin.clear();
     cin.sync();
     cin.get();

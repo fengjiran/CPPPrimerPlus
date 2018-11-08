@@ -5,6 +5,7 @@
 #ifndef CPPPRIMERPLUS_EXERCISE_H
 #define CPPPRIMERPLUS_EXERCISE_H
 
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -19,5 +20,8 @@ struct CandyBar {
 void ShowNameAge();
 
 void ShowCandyBar();
+
+// The chapter8
+void TestSwap();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H
