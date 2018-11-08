@@ -4,4 +4,4 @@ project(CPPPrimerPlus)
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
-add_executable(CPPPrimerPlus main.cpp chapter4.cpp exercise.h)
+add_executable(CPPPrimerPlus main.cpp src/chapter4.cpp header/exercise.h src/chapter5.cpp)

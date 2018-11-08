@@ -3,7 +3,7 @@
 //
 #include <iostream>
 #include <string>
-#include "exercise.h"
+#include "../header/exercise.h"
 
 using namespace std;
 
@@ -33,15 +33,13 @@ void ShowNameAge() {
 }
 
 void ShowCandyBar() {
-    struct CandyBar {
-        string name;
-        double weight;
-        int calories;
-    };
+    CandyBar snack[3] = {{"Mocha Munch", 2.3,  350},
+                         {"Bambi",       0.5,  22},
+                         {"Godzilla",    20.0, 565}};
 
-    CandyBar snack = {"Mocha Munch", 2.3, 350};
-
-    cout << snack.name << endl;
-    cout << snack.weight << endl;
-    cout << snack.calories << endl;
+    for (int i = 0; i < 3; i++) {
+        cout << snack[i].name << endl;
+        cout << snack[i].weight << endl;
+        cout << snack[i].calories << endl;
+    }
 }
