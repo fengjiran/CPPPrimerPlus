@@ -4,7 +4,8 @@
 using namespace std;
 
 int main() {
-    ShowNameAge();
+//    ShowNameAge();
+    ShowCandyBar();
     cin.clear();
     cin.sync();
     cin.get();

@@ -31,3 +31,17 @@ void ShowNameAge() {
     cout << "Grade: " << grade << endl;
     cout << "Age: " << age << endl;
 }
+
+void ShowCandyBar() {
+    struct CandyBar {
+        string name;
+        double weight;
+        int calories;
+    };
+
+    CandyBar snack = {"Mocha Munch", 2.3, 350};
+
+    cout << snack.name << endl;
+    cout << snack.weight << endl;
+    cout << snack.calories << endl;
+}

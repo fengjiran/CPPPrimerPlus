@@ -7,4 +7,7 @@
 
 // The chapter4
 void ShowNameAge();
+
+void ShowCandyBar();
+
 #endif //CPPPRIMERPLUS_EXERCISE_H
