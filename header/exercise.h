@@ -32,4 +32,7 @@ struct free_throws {
 void TestSwap();
 void StrtRef();
 
+// The chapter10
+void UseStack0();
+
 #endif //CPPPRIMERPLUS_EXERCISE_H

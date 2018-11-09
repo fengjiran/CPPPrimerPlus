@@ -1,10 +1,12 @@
 #include "header/exercise.h"
 
+
 int main() {
 //    ShowNameAge();
 //    ShowCandyBar();
 //    TestSwap();
-    StrtRef();
+//    StrtRef();
+    UseStack0();
     cin.clear();
     cin.sync();
     cin.get();
