@@ -1,0 +1,8 @@
+//
+// Created by Richard on 2018/11/9.
+//
+
+#ifndef CPPPRIMERPLUS_STACK00_H
+#define CPPPRIMERPLUS_STACK00_H
+
+#endif //CPPPRIMERPLUS_STACK00_H
