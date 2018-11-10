@@ -1,7 +1,7 @@
 //
 // Created by Richard on 2018/11/9.
 //
-#include "../header/stack00.h"
+#include "../header/stock00.h"
 
 void UseStack0() {
     Stock fluffy_the_cat;
