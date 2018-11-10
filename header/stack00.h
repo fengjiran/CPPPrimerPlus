@@ -12,11 +12,11 @@ using namespace std;
 
 class Stock {
 private:
-    string company;  // the name of company
-    long shares;  // total shares
-    double share_val;  // value of each share
-    double total_val;  // total value of all the shares
-    void SetTotal() { total_val = shares * share_val; };
+    string company_;  // the name of company
+    long shares_;  // total shares
+    double share_val_;  // value of each share
+    double total_val_;  // total value of all the shares
+    void SetTotal() { total_val_ = shares_ * share_val_; };
 public:
     void Acquire(const string &co, long n, double pr);
 

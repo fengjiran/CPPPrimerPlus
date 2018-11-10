@@ -4,16 +4,16 @@
 #include "../header/stack00.h"
 
 void Stock::Acquire(const string &co, long n, double pr) {
-    company = co;
+    company_ = co;
     if (n < 0) {
         cout << "Number of shares can't be negative; "
-             << company << " shares set to 0.\n";
-        shares = 0;
+             << company_ << " shares set to 0.\n";
+        shares_ = 0;
     } else {
-        shares = n;
+        shares_ = n;
     }
 
-    share_val = pr;
+    share_val_ = pr;
     SetTotal();
 }
 
@@ -22,8 +22,8 @@ void Stock::Buy(long num, double price) {
         cout << "Number of shares purchased can't be negative. "
              << "Transaction is aborted.\n";
     } else {
-        shares += num;
-        share_val = price;
+        shares_ += num;
+        share_val_ = price;
         SetTotal();
     }
 }
@@ -32,18 +32,18 @@ void Stock::Sell(long num, double price) {
     if (num < 0)
         cout << "Number of shares purchased can't be negative. "
              << "Transaction is aborted.\n";
-    else if (num > shares)
+    else if (num > shares_)
         cout << "You can't sell more than you have! "
              << "Transaction is aborted.\n";
     else {
-        shares -= num;
-        share_val = price;
+        shares_ -= num;
+        share_val_ = price;
         SetTotal();
     }
 }
 
 void Stock::Update(double price) {
-    share_val = price;
+    share_val_ = price;
     SetTotal();
 }
 
@@ -53,13 +53,13 @@ void Stock::Show() {
     streamsize prec = cout.precision(3);
 
     // set format to #.###
-    cout << "Company: " << company
-         << " Shares: " << shares << endl;
-    cout << " Share Price: $" << share_val;
+    cout << "Company: " << company_
+         << " Shares: " << shares_ << endl;
+    cout << " Share Price: $" << share_val_;
 
     // set format to #.##
     cout.precision(2);
-    cout << " Total Worth: $" << total_val << endl;
+    cout << " Total Worth: $" << total_val_ << endl;
 
     // restore original format
     cout.setf(orig, ios_base::floatfield);
