@@ -4,15 +4,22 @@
 #include "../header/stock00.h"
 
 void UseStack0() {
-    Stock fluffy_the_cat;
-    fluffy_the_cat.Acquire("NanoSmart", 20, 12.50);
-    fluffy_the_cat.Show();
-    fluffy_the_cat.Buy(15, 18.125);
-    fluffy_the_cat.Show();
-    fluffy_the_cat.Sell(400, 20.00);
-    fluffy_the_cat.Show();
-    fluffy_the_cat.Buy(300000, 40.125);
-    fluffy_the_cat.Show();
-    fluffy_the_cat.Sell(300000, 0.125);
-    fluffy_the_cat.Show();
+    cout << "Using constructors to create new objects\n";
+    Stock stock1("NanoSmart", 12, 20.0);
+    stock1.Show();
+
+    Stock stock2 = Stock("Boffo Objects", 2, 2.0);
+    stock2.Show();
+
+    cout << "Assigning stock1 to stock2:\n";
+    stock2 = stock1;
+    cout << "Listing stock1 and stock2:\n";
+    stock1.Show();
+    stock2.Show();
+
+    cout << "Using a constructor to reset an object\n";
+    stock1 = Stock("Nifty Foods", 10, 50.0);
+    cout << "Revised stock1:\n";
+    stock1.Show();
+    cout << "Done!\n";
 }

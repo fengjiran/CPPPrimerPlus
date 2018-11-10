@@ -4,6 +4,7 @@
 #include "../header/stock00.h"
 
 Stock::Stock() {
+    cout << "Default constructor called\n";
     company_ = "no name";
     shares_ = 0;
     share_val_ = 0.0;
@@ -11,6 +12,7 @@ Stock::Stock() {
 }
 
 Stock::Stock(const string &company, long shares, double share_val) {
+    cout << "Constructor using " << company << " called\n";
     company_ = company;
     if (shares < 0) {
         cout << "Number of shares can't be negative; "
@@ -25,19 +27,23 @@ Stock::Stock(const string &company, long shares, double share_val) {
 
 }
 
-void Stock::Acquire(const string &co, long n, double pr) {
-    company_ = co;
-    if (n < 0) {
-        cout << "Number of shares can't be negative; "
-             << company_ << " shares set to 0.\n";
-        shares_ = 0;
-    } else {
-        shares_ = n;
-    }
-
-    share_val_ = pr;
-    SetTotal();
+Stock::~Stock() {
+    cout << "Bye, " << company_ << "!\n";
 }
+
+//void Stock::Acquire(const string &co, long n, double pr) {
+//    company_ = co;
+//    if (n < 0) {
+//        cout << "Number of shares can't be negative; "
+//             << company_ << " shares set to 0.\n";
+//        shares_ = 0;
+//    } else {
+//        shares_ = n;
+//    }
+//
+//    share_val_ = pr;
+//    SetTotal();
+//}
 
 void Stock::Buy(long num, double price) {
     if (num < 0) {
@@ -87,4 +93,6 @@ void Stock::Show() {
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
 }
+
+
 

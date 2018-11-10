@@ -20,9 +20,11 @@ private:
 public:
     Stock();
 
-    Stock(const string &company, long shares, double share_val);
+    Stock(const string &company, long shares=0, double share_val=0.0);
 
-    void Acquire(const string &co, long n, double pr);
+    ~Stock();
+
+//    void Acquire(const string &co, long n, double pr);
 
     void Buy(long num, double price);
 
