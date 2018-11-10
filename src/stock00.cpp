@@ -3,6 +3,21 @@
 //
 #include "../header/stack00.h"
 
+Stock::Stock(const string &company, long shares, double share_val) {
+    company_ = company;
+    if (shares < 0) {
+        cout << "Number of shares can't be negative; "
+             << company_ << " shares set to 0.\n";
+        shares_ = 0;
+    } else {
+        shares_ = shares;
+    }
+
+    share_val_ = share_val;
+    SetTotal();
+
+}
+
 void Stock::Acquire(const string &co, long n, double pr) {
     company_ = co;
     if (n < 0) {

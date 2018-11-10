@@ -18,6 +18,8 @@ private:
     double total_val_;  // total value of all the shares
     void SetTotal() { total_val_ = shares_ * share_val_; };
 public:
+    Stock(const string &company, long shares, double share_val);
+
     void Acquire(const string &co, long n, double pr);
 
     void Buy(long num, double price);
