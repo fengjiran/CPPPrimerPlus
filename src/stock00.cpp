@@ -3,6 +3,13 @@
 //
 #include "../header/stack00.h"
 
+Stock::Stock() {
+    company_ = "no name";
+    shares_ = 0;
+    share_val_ = 0.0;
+    total_val_ = 0.0;
+}
+
 Stock::Stock(const string &company, long shares, double share_val) {
     company_ = company;
     if (shares < 0) {
@@ -80,3 +87,4 @@ void Stock::Show() {
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
 }
+
