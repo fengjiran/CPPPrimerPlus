@@ -33,6 +33,7 @@ public:
     void Update(double price);
 
     void Show();
+
 };
 
 #endif //CPPPRIMERPLUS_STACK00_H
