@@ -21,6 +21,9 @@ void ShowNameAge();
 
 void ShowCandyBar();
 
+// The chapter7
+void ex1();
+
 // The chapter8
 struct free_throws {
     string name;

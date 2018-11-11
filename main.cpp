@@ -6,7 +6,8 @@ int main() {
 //    ShowCandyBar();
 //    TestSwap();
 //    StrtRef();
-    UseStack0();
+//    UseStack0();
+    ex1();
     cin.clear();
     cin.sync();
     cin.get();
