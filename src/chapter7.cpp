@@ -48,3 +48,17 @@ int FillArray(double arr[], int limit) {
 
     return i;
 }
+
+void ShowArray(const double arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << "Property #" << (i + 1) << ": $";
+        cout << arr[i] << endl;
+    }
+}
+
+double ComputeAve(const double arr[], int n) {
+    double sum = 0.0;
+    for (int i = 0; i < n; i++)
+        sum += arr[i];
+    return sum / n;
+}
