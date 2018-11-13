@@ -50,6 +50,8 @@ void Swap(job &j1, job &j2);
 
 void Show(const job &j);
 
+void TestTwoSwap();
+
 // The chapter10
 void UseStack0();
 

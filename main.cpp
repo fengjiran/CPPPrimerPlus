@@ -1,4 +1,5 @@
 #include "header/exercise.h"
+
 using namespace std;
 
 int main() {
@@ -7,7 +8,8 @@ int main() {
 //    TestSwap();
 //    StrtRef();
 //    UseStack0();
-    ex1();
+//    ex1();
+    TestTwoSwap();
     cin.clear();
     cin.sync();
     cin.get();

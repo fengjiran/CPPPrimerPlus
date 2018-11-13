@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/8.
 //
 #include "../header/exercise.h"
+
 using namespace std;
 
 void swapr(int &a, int &b) {
@@ -120,5 +121,39 @@ void TestTwoSwap() {
     Swap(i, j);
     cout << "Now i, j = " << i << ", " << j << ".\n";
 
-//    job sue
+    job sue = {"Susan Yaffee", 73000.60, 7};
+    job sidney = {"Sidney Taffee", 78060.72, 9};
+    cout << "Before job swapping:\n";
+    Show(sue);
+    Show(sidney);
+
+    Swap(sue, sidney);
+    cout << "After job swapping:\n";
+    Show(sue);
+    Show(sidney);
+}
+
+template<typename T>
+void Swap(T &a, T &b) {
+    T tmp = a;
+    a = b;
+    b = tmp;
+}
+
+template<>
+void Swap(job &j1, job &j2) {
+    double t1;
+    int t2;
+    t1 = j1.salary;
+    j1.salary = j2.salary;
+    j2.salary = t1;
+
+    t2 = j1.floor;
+    j1.floor = j2.floor;
+    j2.floor = t2;
+}
+
+void Show(const job &j) {
+    cout << j.name << ": $" << j.salary
+         << " on floor " << j.floor << endl;
 }
