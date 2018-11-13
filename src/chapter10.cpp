@@ -41,7 +41,8 @@ void UseStock2() {
 
     const Stock *top = &stocks[0];
     for (st = 1; st < STKS; st++)
-        top = &stocks[st].GetTopVal(*top);
+        top = &top->GetTopVal(stocks[st]);
+//        top = &stocks[st].GetTopVal(*top);
 
     cout << "\nMost valuable holding:\n";
     top->Show();

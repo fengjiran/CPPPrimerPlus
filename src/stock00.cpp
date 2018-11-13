@@ -102,6 +102,3 @@ const Stock &Stock::GetTopVal(const Stock &s) const {
         return *this;
 }
 
-
-
-
