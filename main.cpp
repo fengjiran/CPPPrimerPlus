@@ -7,7 +7,7 @@ int main() {
 //    ShowCandyBar();
 //    TestSwap();
 //    StrtRef();
-//    UseStack0();
+//    UseStock0();
 //    ex1();
 //    TestTwoSwap();
     Temptempover();

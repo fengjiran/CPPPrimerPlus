@@ -66,6 +66,6 @@ struct debts {
 void Temptempover();
 
 // The chapter10
-void UseStack0();
+void UseStock0();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H

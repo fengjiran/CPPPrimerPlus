@@ -4,7 +4,7 @@
 #include "../header/stock00.h"
 using namespace std;
 
-void UseStack0() {
+void UseStock0() {
     cout << "Using constructors to create new objects\n";
     Stock stock1("NanoSmart", 12, 20.0);
     stock1.Show();
@@ -23,4 +23,8 @@ void UseStack0() {
     cout << "Revised stock1:\n";
     stock1.Show();
     cout << "Done!\n";
+}
+
+void UseStock2() {
+    //
 }
