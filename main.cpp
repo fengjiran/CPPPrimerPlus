@@ -7,10 +7,10 @@ int main() {
 //    ShowCandyBar();
 //    TestSwap();
 //    StrtRef();
-//    UseStock0();
+    UseStock2();
 //    ex1();
 //    TestTwoSwap();
-    Temptempover();
+//    Temptempover();
     cin.clear();
     cin.sync();
     cin.get();
