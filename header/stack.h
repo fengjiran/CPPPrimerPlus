@@ -9,8 +9,8 @@ typedef unsigned long Item;
 
 class Stack {
 private:
-    static const int max = 10;
-    Item items[max];  // hold stack items
+    static const int MAX = 10;
+    Item items[MAX];  // hold stack items
     int top;  // index for top stack item
 public:
     Stack();
