@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/11.
 //
 #include "../header/exercise.h"
+using namespace std;
 
 double ComptHarmonicAve(double x, double y) {
     return 2.0 * x * y / (x + y);

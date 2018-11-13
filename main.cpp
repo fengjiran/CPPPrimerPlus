@@ -1,5 +1,5 @@
 #include "header/exercise.h"
-
+using namespace std;
 
 int main() {
 //    ShowNameAge();

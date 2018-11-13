@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/9.
 //
 #include "../header/stock00.h"
+using namespace std;
 
 void UseStack0() {
     cout << "Using constructors to create new objects\n";

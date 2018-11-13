@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/8.
 //
 #include "../header/exercise.h"
+using namespace std;
 
 void ShowNameAge() {
     string first_name;

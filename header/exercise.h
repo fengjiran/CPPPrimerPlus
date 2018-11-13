@@ -8,11 +8,11 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+//using namespace std;
 
 // The chapter4
 struct CandyBar {
-    string name;
+    std::string name;
     double weight;
     int calories;
 };
@@ -26,7 +26,7 @@ void ex1();
 
 // The chapter8
 struct free_throws {
-    string name;
+    std::string name;
     int made;
     int attempts;
     float percent;

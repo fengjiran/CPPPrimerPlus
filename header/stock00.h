@@ -8,11 +8,11 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+//using namespace std;
 
 class Stock {
 private:
-    string company_;  // the name of company
+    std::string company_;  // the name of company
     long shares_;  // total shares
     double share_val_;  // value of each share
     double total_val_;  // total value of all the shares
@@ -20,7 +20,7 @@ private:
 public:
     Stock();
 
-    Stock(const string &company, long shares=0, double share_val=0.0);
+    Stock(const std::string &company, long shares=0, double share_val=0.0);
 
     ~Stock();
 

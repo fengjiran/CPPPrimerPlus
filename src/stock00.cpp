@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/9.
 //
 #include "../header/stock00.h"
+using namespace std;
 
 Stock::Stock() {
     cout << "Default constructor called\n";
