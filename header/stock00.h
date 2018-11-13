@@ -32,7 +32,7 @@ public:
 
     void Update(double price);
 
-    void Show();
+    void Show() const;
 
 };
 

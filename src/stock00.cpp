@@ -24,6 +24,7 @@ Stock::Stock(const string &company, long shares, double share_val) {
     }
 
     share_val_ = share_val;
+
     SetTotal();
 
 }
@@ -76,7 +77,7 @@ void Stock::Update(double price) {
     SetTotal();
 }
 
-void Stock::Show() {
+void Stock::Show() const {
     ios_base::fmtflags orig =
             cout.setf(ios_base::fixed, ios_base::floatfield);
     streamsize prec = cout.precision(3);
