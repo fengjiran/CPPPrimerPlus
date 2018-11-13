@@ -13,4 +13,5 @@ add_executable(CPPPrimerPlus
         src/stock00.cpp
         src/chapter10.cpp
         src/chapter7.cpp
-        header/stack.h)
+        header/stack.h
+        src/stack.cpp)
