@@ -33,7 +33,22 @@ struct free_throws {
 };
 
 void TestSwap();
+
 void StrtRef();
+
+template<typename T>
+void Swap(T &a, T &b);
+
+struct job {
+    char name[40];
+    double salary;
+    int floor;
+};
+
+template<>
+void Swap(job &j1, job &j2);
+
+void Show(const job &j);
 
 // The chapter10
 void UseStack0();

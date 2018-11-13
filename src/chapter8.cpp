@@ -110,3 +110,15 @@ const string &version2(string &s1, const string &s2) {
     s1 = s2 + s1 + s2;
     return s1;
 }
+
+void TestTwoSwap() {
+    cout.precision(2);
+    cout.setf(ios::fixed, ios::floatfield);
+    int i = 10, j = 20;
+    cout << "i, j = " << i << ", " << j << ".\n";
+    cout << "Using compiler-generated int swapper:\n";
+    Swap(i, j);
+    cout << "Now i, j = " << i << ", " << j << ".\n";
+
+//    job sue
+}
