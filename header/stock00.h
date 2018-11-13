@@ -2,8 +2,8 @@
 // Created by Richard on 2018/11/9.
 // version 00
 
-#ifndef CPPPRIMERPLUS_STACK00_H
-#define CPPPRIMERPLUS_STACK00_H
+#ifndef CPPPRIMERPLUS_STOCK00_H
+#define CPPPRIMERPLUS_STOCK00_H
 
 #include <iostream>
 #include <string>
@@ -38,4 +38,4 @@ public:
 
 };
 
-#endif //CPPPRIMERPLUS_STACK00_H
+#endif //CPPPRIMERPLUS_STOCK00_H
