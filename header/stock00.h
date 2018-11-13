@@ -34,6 +34,8 @@ public:
 
     void Show() const;
 
+    const Stock & GetTopVal(const Stock & s) const;
+
 };
 
 #endif //CPPPRIMERPLUS_STACK00_H

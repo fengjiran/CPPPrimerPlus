@@ -26,7 +26,6 @@ Stock::Stock(const string &company, long shares, double share_val) {
     share_val_ = share_val;
 
     SetTotal();
-
 }
 
 Stock::~Stock() {
@@ -94,6 +93,13 @@ void Stock::Show() const {
     // restore original format
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
+}
+
+const Stock &Stock::GetTopVal(const Stock &s) const {
+    if (s.total_val_ > this->total_val_)
+        return s;
+    else
+        return *this;
 }
 
 
