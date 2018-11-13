@@ -175,6 +175,7 @@ void Temptempover() {
 
     cout << "Listing Mr.E's debts:\n";
     ShowArray(pd, 3);
+//    cout << "done\n";
 }
 
 template<typename T>
