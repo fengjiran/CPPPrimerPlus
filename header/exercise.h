@@ -52,6 +52,19 @@ void Show(const job &j);
 
 void TestTwoSwap();
 
+template<typename T>
+void ShowArray(T arr[], int n);
+
+template<typename T>
+void ShowArray(T *arr[], int n);
+
+struct debts {
+    char name[50];
+    double amount;
+};
+
+void Temptempover();
+
 // The chapter10
 void UseStack0();
 
