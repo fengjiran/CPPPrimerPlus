@@ -73,6 +73,19 @@ void UseStack() {
                 else
                     st.Push(po);
                 break;
+            case 'p':
+            case 'P':
+                if (st.IsEmpty())
+                    cout << "Stack already empty\n";
+                else {
+                    st.Pop(po);
+                    cout << "PO #" << po << " popped\n";
+                }
+                break;
+            default:
+                cout << "Please enter A to add a purchase order.\n"
+                     << "P to process a PO, or Q to quit.\n";
         }
     }
+    cout << "Bye\n";
 }
