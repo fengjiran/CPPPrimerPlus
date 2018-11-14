@@ -66,6 +66,11 @@ Time Time::operator*(double n) const {
     return result;
 }
 
+std::ostream &operator<<(std::ostream &os, const Time &t) {
+    os << t.hours << " hours, " << t.minutes << " minutes";
+    return os;
+}
+
 //Time operator*(double n, const Time &t) {
 //    Time result;
 //    long totalminutes = t.hours * 60 * n +

@@ -5,6 +5,8 @@
 #ifndef CPPPRIMERPLUS_MYTIME0_H
 #define CPPPRIMERPLUS_MYTIME0_H
 
+#include <iostream>
+
 class Time {
 private:
     int hours;
@@ -29,6 +31,8 @@ public:
     Time operator*(double n) const;
 
     friend Time operator*(double n, const Time &t) { return t * n; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Time &t);
 
     void Show() const;
 };
