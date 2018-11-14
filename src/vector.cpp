@@ -59,6 +59,16 @@ namespace VECTOR {
         } else if (this->mode == POL) {
             this->mag = n1;
             this->ang = n2 / Rad_to_deg;
+            this->SetX();
+            this->SetY();
+        } else {
+            cout << "Incorrect 3rd argument to Vector() --";
+            cout << "vector set to 0\n";
+            this->x = 0.0;
+            this->y = 0.0;
+            this->mag = 0.0;
+            this->ang = 0.0;
+            this->mode = RECT;
         }
 
     }
