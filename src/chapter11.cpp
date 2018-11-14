@@ -22,7 +22,8 @@ void UseTime0() {
     fixing.Show();
     std::cout << std::endl;
 
-    total = coding.Sum(fixing);
+//    total = coding.operator+(fixing);
+    total = coding + fixing;
     std::cout << "coding.Sum(fixing) = ";
     total.Show();
     std::cout << std::endl;
