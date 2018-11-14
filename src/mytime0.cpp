@@ -47,4 +47,23 @@ void Time::Show() const {
     std::cout << hours << " hours, " << minutes << " minutes\n";
 }
 
+Time Time::operator-(const Time &t) const {
+    Time diff;
+    int tot1, tot2;
+    tot1 = t.minutes + 60 * t.hours;
+    tot2 = this->minutes + 60 * this->hours;
+    diff.minutes = (tot2 - tot1) % 60;
+    diff.hours = (tot2 - tot1) / 60;
+    return diff;
+}
+
+Time Time::operator*(double n) const {
+    Time result;
+    long totalminutes = this->hours * 60 * n +
+                        this->minutes * n;
+    result.hours = totalminutes/60;
+    result.minutes = totalminutes%60;
+    return result;
+}
+
 

@@ -24,6 +24,10 @@ public:
 
     Time operator+(const Time &t) const;
 
+    Time operator-(const Time &t) const;
+
+    Time operator*(double n) const;
+
     void Show() const;
 };
 
