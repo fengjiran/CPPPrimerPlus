@@ -121,5 +121,27 @@ namespace VECTOR {
         return Vector(-this->x, -this->y);
     }
 
+    Vector Vector::operator*(double n) const {
+        return Vector(n * this->x, n * this->y);
+    }
+
+//    Vector operator*(double n, const Vector &a);
+
+    Vector operator*(double n, const Vector &a) {
+        return a * n;
+    }
+
+    std::ostream &operator<<(std::ostream &os, const Vector &v) {
+        if (v.mode == Vector::RECT)
+            os << "(x, y) = (" << v.x << ", " << v.y << ")";
+        else if (v.mode == Vector::POL) {
+            os << "(m, a) = (" << v.mag << ", " << v.ang << ")";
+        } else
+            os << "Vector object mode is invalid";
+        return os;
+    }
+
+//    std::ostream &operator<<(std::ostream &os, const Vector &v);
+
 
 }
