@@ -83,9 +83,10 @@ void UseStack() {
                 }
                 break;
             default:
-                cout << "Please enter A to add a purchase order.\n"
-                     << "P to process a PO, or Q to quit.\n";
+                break;
         }
+        cout << "Please enter A to add a purchase order.\n"
+             << "P to process a PO, or Q to quit.\n";
     }
     cout << "Bye\n";
 }
