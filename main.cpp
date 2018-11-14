@@ -11,9 +11,10 @@ int main() {
 //    ex1();
 //    TestTwoSwap();
 //    Temptempover();
-    UseStack();
+//    UseStack();
 //    cin.clear();
 //    cin.sync();
 //    cin.get();
+    UseTime0();
     return 0;
 }
