@@ -1,0 +1,8 @@
+//
+// Created by GUO on 2018/11/14.
+//
+
+#ifndef CPPPRIMERPLUS_VECTOR_H
+#define CPPPRIMERPLUS_VECTOR_H
+
+#endif //CPPPRIMERPLUS_VECTOR_H
