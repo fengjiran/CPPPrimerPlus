@@ -2,6 +2,7 @@
 // Created by Richard on 2018/11/9.
 //
 #include "../header/stock00.h"
+#include "../header/stack.h"
 
 using namespace std;
 
@@ -46,4 +47,10 @@ void UseStock2() {
 
     cout << "\nMost valuable holding:\n";
     top->Show();
+}
+
+void UseStack() {
+    Stack st;  // create an empty stack
+    char ch;
+
 }

@@ -68,5 +68,6 @@ void Temptempover();
 // The chapter10
 void UseStock0();
 void UseStock2();
+void UseStack();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H
