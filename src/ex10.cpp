@@ -54,6 +54,7 @@ void BankAccount::Withdraw(double cash) {
 Betelgeusean::Betelgeusean(const string &name, int CI) {
     name_ = name;
     CI_ = CI;
+//    name_ += "c";
 }
 
 void Betelgeusean::SetCI(int new_ci) {

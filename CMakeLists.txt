@@ -14,4 +14,7 @@ add_executable(CPPPrimerPlus
         src/chapter10.cpp
         src/chapter7.cpp
         header/stack.h
-        src/stack.cpp header/ex10.h src/ex10.cpp)
+        src/stack.cpp
+        header/ex10.h
+        src/ex10.cpp
+        header/mytime0.h)
