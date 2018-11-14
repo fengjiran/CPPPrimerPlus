@@ -14,9 +14,14 @@ private:
     int top;  // index for top stack item
 public:
     Stack();
+
     bool IsEmpty() const;
+
     bool IsFull() const;
-    bool Push(const Item & item);  // add item to stack
+
+    bool Push(const Item &item);  // add item to stack
     bool Pop(Item &item);  // pop top into item
 };
+
+
 #endif //CPPPRIMERPLUS_STACK_H

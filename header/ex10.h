@@ -25,4 +25,16 @@ public:
 
 };
 
+class Betelgeusean {
+private:
+    std::string name_;
+    int CI_;
+public:
+    explicit Betelgeusean(const std::string &name = "Plorga", int CI = 50);
+
+    void SetCI(int new_ci);
+
+    void Show() const;
+};
+
 #endif //CPPPRIMERPLUS_EX10_H
