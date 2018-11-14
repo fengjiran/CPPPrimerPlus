@@ -3,6 +3,7 @@
 //
 #include "../header/stock00.h"
 #include "../header/stack.h"
+#include <cctype>
 
 using namespace std;
 
