@@ -61,8 +61,18 @@ Time Time::operator*(double n) const {
     Time result;
     long totalminutes = this->hours * 60 * n +
                         this->minutes * n;
-    result.hours = totalminutes/60;
-    result.minutes = totalminutes%60;
+    result.hours = totalminutes / 60;
+    result.minutes = totalminutes % 60;
+    return result;
+}
+
+Time operator*(double n, const Time &t) {
+    Time result;
+    long totalminutes = t.hours * 60 * n +
+                        t.minutes * n;
+
+    result.hours = totalminutes / 60;
+    result.minutes = totalminutes % 60;
     return result;
 }
 

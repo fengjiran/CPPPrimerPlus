@@ -28,6 +28,8 @@ public:
 
     Time operator*(double n) const;
 
+    friend Time operator*(double n, const Time & t);
+
     void Show() const;
 };
 
