@@ -28,7 +28,7 @@ public:
 
     Time operator*(double n) const;
 
-    friend Time operator*(double n, const Time & t);
+    friend Time operator*(double n, const Time &t) { return t * n; }
 
     void Show() const;
 };
