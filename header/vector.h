@@ -1,11 +1,12 @@
 //
-// Created by GUO on 2018/11/14.
+// Created by richard on 2018/11/14.
 //
 
 #ifndef CPPPRIMERPLUS_VECTOR_H
 #define CPPPRIMERPLUS_VECTOR_H
 
 #include <iostream>
+
 namespace VECTOR {
     class Vector {
     public:
