@@ -72,5 +72,6 @@ void UseStack();
 
 // The chapter11
 void UseTime0();
+void UseTime1();
 
 #endif //CPPPRIMERPLUS_EXERCISE_H

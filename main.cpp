@@ -15,6 +15,6 @@ int main() {
 //    cin.clear();
 //    cin.sync();
 //    cin.get();
-    UseTime0();
+    UseTime1();
     return 0;
 }
