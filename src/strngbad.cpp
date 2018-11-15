@@ -19,6 +19,12 @@ StringBad::StringBad() {
 }
 
 StringBad::StringBad(const char *s) {
+    this->len = std::strlen(s);
+    this->str = new char[this->len + 1];
+    std::strcpy(this->str, s);
+    num_strings++;
+    cout << num_strings << ": \"" << this->str
+         << "\" object created\n";
 
 }
 
