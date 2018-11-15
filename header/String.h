@@ -19,6 +19,20 @@ public:
 
     ~String();
 
+    int length() const {return this->len;}
+
+    char &operator[](int i);
+
+    const char &operator[](int i) const;
+
+    static int HowMany();
+
+    friend bool operator<(const String &st, const String &st2);
+
+    friend bool operator>(const String &st, const String &st2);
+
+    friend bool operator==(const String &st, const String &st2);
+
     friend std::ostream &operator<<(std::ostream &os, const String &st);
 };
 
