@@ -9,13 +9,13 @@
 
 class StringBad {
 private:
-    char *srt;
+    char *str;
     int len;
     static int num_strings;
 public:
     StringBad();
 
-    StringBad(const char *s);
+    explicit StringBad(const char *s);
 
     ~StringBad();
 
