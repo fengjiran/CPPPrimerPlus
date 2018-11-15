@@ -19,4 +19,4 @@ add_executable(CPPPrimerPlus
         src/ex10.cpp
         header/mytime0.h
         src/mytime0.cpp
-        src/chapter11.cpp header/vector.h src/vector.cpp)
+        src/chapter11.cpp header/vector.h src/vector.cpp header/strngbad.h)
