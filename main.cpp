@@ -15,6 +15,7 @@ int main() {
 //    cin.clear();
 //    cin.sync();
 //    cin.get();
-    UseTime1();
+//    UseTime1();
+    Vegnews();
     return 0;
 }
