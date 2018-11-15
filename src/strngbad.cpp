@@ -37,7 +37,8 @@ StringBad::~StringBad() {
 }
 
 std::ostream &operator<<(std::ostream &os, const StringBad &st) {
-    return <#initializer#>;
+    os << st.str;
+    return os;
 }
 
 
