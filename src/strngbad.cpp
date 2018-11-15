@@ -29,6 +29,10 @@ StringBad::StringBad(const char *s) {
 }
 
 StringBad::~StringBad() {
+    cout << "\"" << this->str << "\" object deleted, ";
+    --num_strings;
+    cout << num_strings << " left\n";
+    delete[] this->str;
 
 }
 
