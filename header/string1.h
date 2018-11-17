@@ -42,7 +42,7 @@ public:
 
     friend std::ostream &operator<<(std::ostream &os, const String &st);
 
-    friend std::istream &operator>>(std::istream &is, const String &st);
+    friend std::istream &operator>>(std::istream &is, String &st);
 };
 
 #endif //CPPPRIMERPLUS_STRING1_H
