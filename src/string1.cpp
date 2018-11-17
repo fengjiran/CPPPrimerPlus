@@ -43,3 +43,13 @@ String::~String() {
 
 }
 
+String &String::operator=(const String &st) {
+    if (this == &st)
+        return *this;
+    delete[] this->str;
+    this->len = st.len;
+    this->str = new char[this->len+1];
+    std::strcpy(this->str, st.str);
+    return *this;
+}
+
