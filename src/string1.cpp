@@ -21,3 +21,11 @@ String::String(const char *s) {
 
 }
 
+String::String() {
+    this->len = 4;
+    this->str = new char[1];
+    this->str[0] = '\0';
+    num_strings++;
+
+}
+
