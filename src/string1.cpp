@@ -48,8 +48,16 @@ String &String::operator=(const String &st) {
         return *this;
     delete[] this->str;
     this->len = st.len;
-    this->str = new char[this->len+1];
+    this->str = new char[this->len + 1];
     std::strcpy(this->str, st.str);
+    return *this;
+}
+
+String &String::operator=(const char *s) {
+    delete[] this->str;
+    this->len = std::strlen(s);
+    this->str = new char[this->len + 1];
+    std::strcpy(this->str, s);
     return *this;
 }
 
