@@ -18,9 +18,15 @@ public:
 
     explicit String(const char *s);
 
+    String(const String &);
+
     ~String();
 
     int length() const {return this->len;}
+
+    String &operator=(const String&);
+
+    String &operator=(const char *);
 
     char &operator[](int i);
 
@@ -35,6 +41,8 @@ public:
     friend bool operator==(const String &st, const String &st2);
 
     friend std::ostream &operator<<(std::ostream &os, const String &st);
+
+    friend std::istream &operator>>(std::istream &is, const String &st);
 };
 
 #endif //CPPPRIMERPLUS_STRING_H
