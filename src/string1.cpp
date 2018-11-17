@@ -81,3 +81,8 @@ bool operator==(const String &st1, const String &st2) {
     return (std::strcmp(st1.str, st2.str) == 0);
 }
 
+std::ostream &operator<<(std::ostream &os, const String &st) {
+    os << st.str;
+    return os;
+}
+
