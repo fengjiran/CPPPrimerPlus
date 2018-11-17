@@ -73,3 +73,7 @@ bool operator<(const String &st1, const String &st2) {
     return (std::strcmp(st1.str, st2.str) < 0);
 }
 
+bool operator>(const String &st1, const String &st2) {
+    return st2 < st1;
+}
+
