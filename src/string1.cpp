@@ -37,3 +37,9 @@ String::String(const String &st) {
 
 }
 
+String::~String() {
+    --num_strings;
+    delete[] this->str;
+
+}
+
