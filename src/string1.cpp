@@ -61,3 +61,7 @@ String &String::operator=(const char *s) {
     return *this;
 }
 
+char &String::operator[](int i) {
+    return this->str[i];
+}
+
