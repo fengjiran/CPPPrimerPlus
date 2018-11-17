@@ -69,3 +69,7 @@ const char &String::operator[](int i) const {
     return this->str[i];
 }
 
+bool operator<(const String &st1, const String &st2) {
+    return (std::strcmp(st1.str, st2.str) < 0);
+}
+
