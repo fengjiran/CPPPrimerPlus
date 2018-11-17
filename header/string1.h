@@ -34,11 +34,11 @@ public:
 
     static int HowMany();
 
-    friend bool operator<(const String &st, const String &st2);
+    friend bool operator<(const String &st1, const String &st2);
 
-    friend bool operator>(const String &st, const String &st2);
+    friend bool operator>(const String &st1, const String &st2);
 
-    friend bool operator==(const String &st, const String &st2);
+    friend bool operator==(const String &st1, const String &st2);
 
     friend std::ostream &operator<<(std::ostream &os, const String &st);
 
