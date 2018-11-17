@@ -29,3 +29,11 @@ String::String() {
 
 }
 
+String::String(const String &st) {
+    num_strings++;
+    this->len = st.len;
+    this->str = new char[this->len + 1];
+    std::strcpy(this->str, st.str);
+
+}
+
