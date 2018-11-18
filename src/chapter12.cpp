@@ -4,8 +4,13 @@
 
 #include <iostream>
 #include "../header/strngbad.h"
+#include "../header/string1.h"
+
+const int ArSize = 10;
+const int MaxLen = 81;
 
 using std::cout;
+using std::cin;
 using std::endl;
 
 void Callme1(StringBad &rsb) {
@@ -46,4 +51,8 @@ void Vegnews() {
     }
 
     cout << "End of Vegnews()\n";
+}
+
+void Sayings1() {
+    //
 }
