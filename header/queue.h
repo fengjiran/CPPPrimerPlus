@@ -10,13 +10,16 @@ private:
     long arrive;
     int processtime;
 public:
-    Customer() { arrive = processtime = 0; }
+    Customer() {
+        this->arrive = 0;
+        this->processtime = 0;
+    }
 
     void set(long when);
 
-    long when() const { return arrive; }
+    long when() const { return this->arrive; }
 
-    int ptime() const { return processtime; }
+    int ptime() const { return this->processtime; }
 };
 
 typedef Customer Item;
@@ -25,19 +28,34 @@ class Queue {
 private:
     struct Node {
         Item item;
-        struct Node *next;
+        struct Node *next = nullptr;
     };
     enum {
         Q_SIZE = 10
     };
-    Node *front;
-    Node *rear;
+    Node *front = nullptr;
+    Node *rear = nullptr;
     int items;
     const int qsize;
 
     Queue(const Queue &q) : qsize(0) {}
 
     Queue &operator=(const Queue &q) { return *this; }
+
+public:
+    Queue(int qs = Q_SIZE);
+
+    ~Queue();
+
+    bool isempty() const;
+
+    bool isfull() const;
+
+    int queuecount() const;
+
+    bool enqueue(const Item &item);
+
+    bool dequeue(Item &item);
 
 };
 
