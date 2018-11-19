@@ -16,6 +16,7 @@ int main() {
 //    cin.sync();
 //    cin.get();
 //    UseTime1();
-    Vegnews();
+//    Vegnews();
+    usett1();
     return 0;
 }

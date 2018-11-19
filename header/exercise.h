@@ -77,4 +77,7 @@ void UseTime1();
 // The chapter12
 void Vegnews();
 
+// The chapter13
+void usett1();
+
 #endif //CPPPRIMERPLUS_EXERCISE_H
