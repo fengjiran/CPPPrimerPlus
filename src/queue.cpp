@@ -63,7 +63,7 @@ bool Queue::dequeue(Item &item) {
 }
 
 void Customer::set(long when) {
-    this->processtime = std::rand()%3+1;
+    this->processtime = std::rand() % 3 + 1;
     this->arrive = when;
 
 }
