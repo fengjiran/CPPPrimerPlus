@@ -70,5 +70,28 @@ void Sayings1() {
             continue;
         if (!cin || temp[0] == '\0')
             break;
+        else
+            sayings[i] = temp;
     }
+
+    int total = i;
+    if (total > 0) {
+        cout << "Here are your sayings:\n";
+        for (i = 0; i < total; i++)
+            cout << sayings[i][0] << ": " << sayings[i] << endl;
+        int shortest = 0;
+        int first = 0;
+        for (i = 0; i < total; i++) {
+            if (sayings[i].length() < sayings[shortest].length())
+                shortest = i;
+            if (sayings[i] < sayings[first])
+                first = i;
+        }
+        cout << "Shortest saying:\n" << sayings[shortest] << endl;
+        cout << "First alphabetically:\n" << sayings[first] << endl;
+        cout << "This program used " << String::HowMany()
+             << " String objects. Bye.\n";
+
+    } else
+        cout << "No input! Bye.\n";
 }
