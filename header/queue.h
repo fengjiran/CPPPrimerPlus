@@ -19,4 +19,22 @@ public:
     int ptime() const { return processtime; }
 };
 
+typedef Customer Item;
+
+class Queue {
+private:
+    struct Node {
+        Item item;
+        struct Node *next;
+    };
+    enum {
+        Q_SIZE = 10
+    };
+    Node *front;
+    Node *rear;
+    int items;
+    const int qsize;
+
+};
+
 #endif //CPPPRIMERPLUS_QUEUE_H
