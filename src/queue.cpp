@@ -48,3 +48,16 @@ bool Queue::enqueue(const Item &item) {
     this->rear = add;
     return true;
 }
+
+bool Queue::dequeue(Item &item) {
+    if (this->front == nullptr)
+        return false;
+    item = this->front->item;
+    this->items--;
+    Node *temp = this->front;
+    this->front = this->front->next;
+    delete temp;
+    if (this->items == 0)
+        this->rear = nullptr;
+    return true;
+}
