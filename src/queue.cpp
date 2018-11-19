@@ -11,3 +11,13 @@ Queue::Queue(int qs) : qsize(qs) {
     this->items = 0;
 
 }
+
+Queue::~Queue() {
+    Node *temp;
+    while (front != nullptr) {
+        temp = front;
+        front = front->next;
+        delete temp;
+    }
+
+}
