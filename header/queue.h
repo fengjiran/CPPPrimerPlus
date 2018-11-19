@@ -35,6 +35,10 @@ private:
     int items;
     const int qsize;
 
+    Queue(const Queue &q) : qsize(0) {}
+
+    Queue &operator=(const Queue &q) { return *this; }
+
 };
 
 #endif //CPPPRIMERPLUS_QUEUE_H
