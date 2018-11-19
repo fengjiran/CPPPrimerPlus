@@ -35,5 +35,16 @@ int Queue::queuecount() const {
 }
 
 bool Queue::enqueue(const Item &item) {
-    return false;
+    if (this->isfull())
+        return false;
+    Node *add = new Node;
+    add->item = item;
+    add->next = nullptr;
+    this->items++;
+    if (this->front == nullptr)
+        this->front = add;
+    else
+        this->rear->next = add;
+    this->rear = add;
+    return true;
 }
