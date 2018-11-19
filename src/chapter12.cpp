@@ -61,4 +61,14 @@ void Sayings1() {
     cout << name << ", please enter up to " << ArSize
          << " short sayings <empty line to quit>:\n";
     String sayings[ArSize];
+    char temp[MaxLen];
+    int i;
+    for (i = 0; i < ArSize; i++) {
+        cout << i + 1 << ": ";
+        cin.get(temp, MaxLen);
+        while (cin && cin.get() != '\n')
+            continue;
+        if (!cin || temp[0] == '\0')
+            break;
+    }
 }
