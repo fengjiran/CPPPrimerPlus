@@ -15,9 +15,9 @@ private:
     string lastname;
     bool hasTable;
 public:
-    TableTennisPlayer(const string &fn = "none",
-                      const string &ln = "none",
-                      bool ht = false);
+    explicit TableTennisPlayer(const string &fn = "none",
+                               const string &ln = "none",
+                               bool ht = false);
 
     void GetName() const;
 
