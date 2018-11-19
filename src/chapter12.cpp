@@ -54,5 +54,11 @@ void Vegnews() {
 }
 
 void Sayings1() {
-    //
+    String name;
+    cout << "Hi, what's your name?\n";
+    cin >> name;
+
+    cout << name << ", please enter up to " << ArSize
+         << " short sayings <empty line to quit>:\n";
+    String sayings[ArSize];
 }
