@@ -10,6 +10,8 @@
 
 //using namespace std;
 
+void testMKL();
+
 // The chapter4
 struct CandyBar {
     std::string name;

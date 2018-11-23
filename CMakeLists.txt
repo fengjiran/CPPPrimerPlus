@@ -4,6 +4,9 @@ project(CPPPrimerPlus)
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
+include_directories(/opt/intel/mkl/include)
+link_directories(/opt/intel/mkl/lib /opt/intel/lib)
+
 add_executable(CPPPrimerPlus
         main.cpp
         src/chapter4.cpp
@@ -31,4 +34,7 @@ add_executable(CPPPrimerPlus
         src/queue.cpp
         header/tabtenn1.h
         src/tabtenn1.cpp
-        src/chapter13.cpp)
+        src/chapter13.cpp
+        src/testMKL.cpp)
+
+target_link_libraries(CPPPrimerPlus mkl_intel_thread iomp5 mkl_core mkl_intel_lp64)

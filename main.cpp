@@ -1,4 +1,5 @@
 #include "header/exercise.h"
+//#include <mkl.h>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main() {
 //    cin.get();
 //    UseTime1();
 //    Vegnews();
-    usett1();
+//    usett1();
+    testMKL();
     return 0;
 }
