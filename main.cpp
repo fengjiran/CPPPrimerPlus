@@ -17,7 +17,6 @@ int main() {
 //    cin.sync();
 //    cin.get();
 //    UseTime1();
-//    Vegnews();
 //    usett1();
     testMKL();
     return 0;
