@@ -15,7 +15,7 @@ private:
     long acct_num;
     double balance;
 public:
-    Brass(const string &s = "Nullbody", long an = -1, double bal = 0.0);
+    explicit Brass(const string &s = "Nullbody", long an = -1, double bal = 0.0);
 
     void Deposit(double amt);
 

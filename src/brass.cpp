@@ -44,3 +44,18 @@ void Brass::WithDraw(double amt) {
              << "Withdrawal cancelled.\n";
     restore(initialState, prec);
 }
+
+double Brass::Balance() const {
+    return balance;
+}
+
+void Brass::ViewAcct() const {
+    format initialState = setFormat();
+    precis prec = cout.precision(2);
+
+    cout << "Client: " << full_name << endl;
+    cout << "Account Number: " << acct_num << endl;
+    cout << "Balance: $" << balance << endl;
+    restore(initialState, prec);
+
+}
