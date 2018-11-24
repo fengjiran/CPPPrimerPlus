@@ -34,9 +34,9 @@ private:
     double rate;
     double owes_bank;
 public:
-    BrassPlus(const string &s = "Nullbody", long an = -1,
-              double bal = 0.0, double ml = 500,
-              double r = 0.11125);
+    explicit BrassPlus(const string &s = "Nullbody", long an = -1,
+                       double bal = 0.0, double ml = 500,
+                       double r = 0.11125);
 
     BrassPlus(const Brass &ba, double ml = 500, double r = 0.11125);
 

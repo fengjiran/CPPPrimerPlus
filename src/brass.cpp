@@ -59,3 +59,10 @@ void Brass::ViewAcct() const {
     restore(initialState, prec);
 
 }
+
+BrassPlus::BrassPlus(const string &s, long an, double bal,
+                     double ml, double r) : Brass(s, an, bal) {
+    max_loan = ml;
+    owes_bank = 0.0;
+    rate = r;
+}
