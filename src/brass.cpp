@@ -86,3 +86,24 @@ void BrassPlus::ViewAcct() const {
     cout << "Loan Rate: " << 100 * rate << "%\n";
     restore(initialState, prec);
 }
+
+void BrassPlus::WithDraw(double amt) {
+    // set up ###.## format
+    format initialState = setFormat();
+    precis prec = cout.precision(2);
+
+    double bal = Balance();
+    if (amt <= bal)
+        Brass::WithDraw(amt);
+    else if (amt <= bal + max_loan - owes_bank) {
+        double advance = amt - bal;
+        owes_bank += advance * (1.0 + rate);
+        cout << "Bank advance: $" << advance << endl;
+        cout << "Finance charge: $" << advance * rate << endl;
+        Deposit(advance);
+        Brass::WithDraw(amt);
+    } else
+        cout << "Credit limit exceeded. Transaction cancelled.\n";
+    restore(initialState, prec);
+
+}
