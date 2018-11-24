@@ -27,3 +27,20 @@ void Brass::Deposit(double amt) {
     else
         balance += amt;
 }
+
+void Brass::WithDraw(double amt) {
+    // set up ###.## format
+    format initialState = setFormat();
+    precis prec = cout.precision(2);
+
+    if (amt < 0)
+        cout << "Withdrawal amount must be positive; "
+             << "withdrawal cancelled!\n";
+    else if (amt <= balance)
+        balance -= amt;
+    else
+        cout << "Withdrawal amount of $" << amt
+             << " exceeds your balance.\n"
+             << "Withdrawal cancelled.\n";
+    restore(initialState, prec);
+}
