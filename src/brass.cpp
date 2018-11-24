@@ -66,3 +66,23 @@ BrassPlus::BrassPlus(const string &s, long an, double bal,
     owes_bank = 0.0;
     rate = r;
 }
+
+BrassPlus::BrassPlus(const Brass &ba, double ml, double r)
+        : Brass(ba) {
+    max_loan = ml;
+    owes_bank = 0.0;
+    rate = r;
+}
+
+void BrassPlus::ViewAcct() const {
+    // set up ###.## format
+    format initialState = setFormat();
+    precis prec = cout.precision(2);
+
+    Brass::ViewAcct();
+    cout << "Max loan: $" << max_loan << endl;
+    cout << "Owed to bank: $" << owes_bank << endl;
+    cout.precision(3);
+    cout << "Loan Rate: " << 100 * rate << "%\n";
+    restore(initialState, prec);
+}
