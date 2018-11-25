@@ -35,6 +35,6 @@ add_executable(CPPPrimerPlus
         header/tabtenn1.h
         src/tabtenn1.cpp
         src/chapter13.cpp
-        src/testMKL.cpp header/brass.h src/brass.cpp)
+        src/testMKL.cpp header/brass.h src/brass.cpp header/worker0.h)
 
 target_link_libraries(CPPPrimerPlus mkl_intel_thread iomp5 mkl_core mkl_intel_lp64)

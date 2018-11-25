@@ -1,0 +1,8 @@
+//
+// Created by richard on 2018/11/25.
+//
+
+#ifndef CPPPRIMERPLUS_WORKER0_H
+#define CPPPRIMERPLUS_WORKER0_H
+
+#endif //CPPPRIMERPLUS_WORKER0_H
