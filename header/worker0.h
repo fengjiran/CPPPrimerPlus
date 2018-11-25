@@ -45,7 +45,7 @@ public:
 class Singer : public Worker {
 protected:
     enum {
-        other, alto, contralto, soprano, base, baritone, tenor
+        other, alto, contralto, soprano, bass, baritone, tenor
     };
     enum {
         Vtypes = 7
@@ -58,7 +58,7 @@ public:
 
     Singer(string &s, long n, int v = other) : Worker(s, n), voice(v) {}
 
-    Singer(const Worker &wk, int v = other) : Worker(wk), voice(v) {}
+    explicit Singer(const Worker &wk, int v = other) : Worker(wk), voice(v) {}
 
     void Set();
 
