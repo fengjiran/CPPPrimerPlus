@@ -56,7 +56,7 @@ private:
 public:
     Singer() : Worker(), voice(other) {}
 
-    Singer(string &s, long n, int v = other) : Worker(s, n), voice(v) {}
+    Singer(const string &s, long n, int v = other) : Worker(s, n), voice(v) {}
 
     explicit Singer(const Worker &wk, int v = other) : Worker(wk), voice(v) {}
 
