@@ -7,4 +7,6 @@ void testCrtr() {
     Derived d;
     Base<Derived> *b = &d;
     b->show();
+    ++(*b);
+    b->show();
 }
