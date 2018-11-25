@@ -18,6 +18,7 @@ int main() {
 //    cin.get();
 //    UseTime1();
 //    usett1();
-    testMKL();
+//    testMKL();
+    worktest();
     return 0;
 }

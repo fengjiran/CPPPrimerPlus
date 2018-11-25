@@ -82,4 +82,7 @@ void Vegnews();
 // The chapter13
 void usett1();
 
+// The chapter14
+void worktest();
+
 #endif //CPPPRIMERPLUS_EXERCISE_H
