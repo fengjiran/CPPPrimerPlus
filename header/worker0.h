@@ -34,8 +34,12 @@ public:
     Waiter(const string &s, long n, int p = 0)
             : Worker(s, n), panache(p) {}
 
-    Waiter(const Worker &wk, int p = 0)
+    explicit Waiter(const Worker &wk, int p = 0)
             : Worker(wk), panache(p) {}
+
+    void Set();
+
+    void Show() const;
 };
 
 #endif //CPPPRIMERPLUS_WORKER0_H
