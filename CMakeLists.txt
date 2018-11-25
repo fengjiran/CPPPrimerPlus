@@ -38,6 +38,6 @@ add_executable(CPPPrimerPlus
         #        src/testMKL.cpp
         header/brass.h
         src/brass.cpp
-        header/worker0.h src/work0.cpp src/chapter14.cpp)
+        header/worker0.h src/work0.cpp src/chapter14.cpp header/crtr.h)
 
 #target_link_libraries(CPPPrimerPlus mkl_intel_thread iomp5 mkl_core mkl_intel_lp64)
