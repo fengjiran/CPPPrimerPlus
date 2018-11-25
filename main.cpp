@@ -19,6 +19,7 @@ int main() {
 //    UseTime1();
 //    usett1();
 //    testMKL();
-    worktest();
+//    worktest();
+    testCrtr();
     return 0;
 }

@@ -85,4 +85,6 @@ void usett1();
 // The chapter14
 void worktest();
 
+void testCrtr();
+
 #endif //CPPPRIMERPLUS_EXERCISE_H
