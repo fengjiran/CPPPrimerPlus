@@ -12,6 +12,8 @@
 
 void testMKL();
 
+void testArmadillo();
+
 // The chapter4
 struct CandyBar {
     std::string name;

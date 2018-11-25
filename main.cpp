@@ -20,6 +20,7 @@ int main() {
 //    usett1();
 //    testMKL();
 //    worktest();
-    testCrtr();
+//    testCrtr();
+    testArmadillo();
     return 0;
 }
