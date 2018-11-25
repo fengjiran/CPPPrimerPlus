@@ -4,6 +4,13 @@ project(CPPPrimerPlus)
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 
+IF (WIN32)
+    include_directories(D:\\Armadillo\\include)
+ELSEIF (APPLE)
+
+ELSEIF (UNIX)
+
+ENDIF ()
 #include_directories(/opt/intel/mkl/include)
 #link_directories(/opt/intel/mkl/lib /opt/intel/lib)
 
@@ -38,6 +45,6 @@ add_executable(CPPPrimerPlus
         #        src/testMKL.cpp
         header/brass.h
         src/brass.cpp
-        header/worker0.h src/work0.cpp src/chapter14.cpp header/crtr.h src/testCRTR.cpp)
+        header/worker0.h src/work0.cpp src/chapter14.cpp header/crtr.h src/testCRTR.cpp src/testArmadillo.cpp)
 
 #target_link_libraries(CPPPrimerPlus mkl_intel_thread iomp5 mkl_core mkl_intel_lp64)
