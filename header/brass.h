@@ -25,7 +25,7 @@ public:
 
     virtual void ViewAcct() const;
 
-    virtual ~Brass();
+    virtual ~Brass() {}
 };
 
 class BrassPlus : public Brass {
