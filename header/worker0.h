@@ -42,4 +42,27 @@ public:
     void Show() const;
 };
 
+class Singer : public Worker {
+protected:
+    enum {
+        other, alto, contralto, soprano, base, baritone, tenor
+    };
+    enum {
+        Vtypes = 7
+    };
+private:
+    static char *pv[Vtypes];
+    int voice;
+public:
+    Singer() : Worker(), voice(other) {}
+
+    Singer(string &s, long n, int v = other) : Worker(s, n), voice(v) {}
+
+    Singer(const Worker &wk, int v = other) : Worker(wk), voice(v) {}
+
+    void Set();
+
+    void Show() const;
+};
+
 #endif //CPPPRIMERPLUS_WORKER0_H
