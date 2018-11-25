@@ -25,4 +25,17 @@ public:
     virtual void Show() const;
 };
 
+class Waiter : public Worker {
+private:
+    int panache;
+public:
+    Waiter() : Worker(), panache(0) {}
+
+    Waiter(const string &s, long n, int p = 0)
+            : Worker(s, n), panache(p) {}
+
+    Waiter(const Worker &wk, int p = 0)
+            : Worker(wk), panache(p) {}
+};
+
 #endif //CPPPRIMERPLUS_WORKER0_H
