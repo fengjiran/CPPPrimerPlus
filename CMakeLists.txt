@@ -16,6 +16,7 @@ IF (WIN32)
 ELSEIF (APPLE)
     include_directories(
             /Users/apple/armadillo/include
+            /Users/richard/armadillo/include
             /opt/intel/mkl/include
     )
 
