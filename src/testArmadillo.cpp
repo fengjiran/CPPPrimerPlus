@@ -8,6 +8,7 @@ using namespace std;
 using namespace arma;
 
 void testArmadillo() {
+    cout << "hello world\n";
     mat A = randu<mat>(4, 5);
     mat B = randu<mat>(4, 5);
 

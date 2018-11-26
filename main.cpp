@@ -21,6 +21,7 @@ int main() {
 //    testMKL();
 //    worktest();
 //    testCrtr();
+
     testArmadillo();
     return 0;
 }
