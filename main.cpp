@@ -22,6 +22,6 @@ int main() {
 //    worktest();
 //    testCrtr();
 
-    testArmadillo();
+    testArmadillo1();
     return 0;
 }

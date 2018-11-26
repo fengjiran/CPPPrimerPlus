@@ -12,7 +12,7 @@
 
 void testMKL();
 
-void testArmadillo();
+void testArmadillo1();
 
 // The chapter4
 struct CandyBar {

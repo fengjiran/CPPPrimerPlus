@@ -7,16 +7,11 @@ set(CMAKE_CXX_STANDARD 14)
 IF (WIN32)
     include_directories(
             D:\\Armadillo\\include
-            #            D:\\IntelSWTools\\compilers_and_libraries\\windows\\mkl\\include
-            #            D:\\OpenBLAS-v0.2.8-x86_64\\include
-            D:\\OpenBLAS\\include
+            D:\\OpenBLAS-v0.2.8-x86_64\\include
     )
 
     link_directories(
-            #            D:\\IntelSWTools\\compilers_and_libraries\\windows\\mkl\\lib\\intel64
-            #            D:\\IntelSWTools\\compilers_and_libraries\\windows\\compiler\\lib\\intel64
-            #            D:\\OpenBLAS-v0.2.8-x86_64\\lib
-            D:\\OpenBLAS\\lib
+            D:\\OpenBLAS-v0.2.8-x86_64\\lib
     )
 ELSEIF (APPLE)
     include_directories(
