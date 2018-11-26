@@ -141,6 +141,4 @@ void testArmadillo1() {
         }
 
     F.print("F:");
-
-
 }
