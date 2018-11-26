@@ -42,6 +42,10 @@ void testArmadillo1() {
     // save matrix as a text file
     A.save("A.txt", raw_ascii);
 
+    // load from file
+    mat B;
+    B.load("A.txt");
+
     // submatrices
     cout << "B( span(0,2), span(3,4) ):" << endl << B(span(0, 2), span(3, 4)) << endl;
 
