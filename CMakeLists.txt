@@ -65,7 +65,7 @@ add_executable(CPPPrimerPlus
         #        header/crtr.h
         #        src/testCRTR.cpp
         src/testArmadillo.cpp
-        )
+        header/template_spec.hpp)
 
 IF (WIN32)
     target_link_libraries(CPPPrimerPlus
